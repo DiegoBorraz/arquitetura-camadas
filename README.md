@@ -1,4 +1,4 @@
-# JAVA - Arquitetura em camadas(Layered Architecture)
+# JAVA - Arquitetura em camadas (Layered Architecture)
 
 Um exemplo de  arquitetura em camadas que segue um padrão de design que organiza um sistema em camadas distintas, cada uma com suas responsabilidades específicas.
 
