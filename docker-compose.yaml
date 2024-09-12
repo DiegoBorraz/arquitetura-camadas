@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:12.20-bullseye
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./database-docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database-docker/postgres-data:/var/lib/postgresql/data
+    
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    
+

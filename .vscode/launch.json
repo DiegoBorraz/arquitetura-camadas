@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+        "type": "java",
+        "name": "JavaSolidApplication",
+        "request": "launch",
+        "mainClass": "com.br.javaSolid.JavaSolidApplication",
+        "projectName": "javaSolid"
+    },
+    {
+        "type": "java",
+        "name": "Spring Boot-javaSolidApplication<javaSolid>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "com.br.javaSolid.javaSolidApplication",
+        "projectName": "javaSolid",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
+    }
+]
+}
