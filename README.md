@@ -75,7 +75,7 @@ src
 
 * Clonar o Projeto
     ```
-    git clone 
+    git clone https://github.com/DiegoBorraz/arquitetura-camadas.git
     ```
 * Acessar o diretório do Projeto
   ```
