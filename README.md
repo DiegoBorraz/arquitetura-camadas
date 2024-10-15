@@ -1,6 +1,20 @@
-# JAVA - Arquitetura em camadas(Layered Architecture)
+# JAVA - Arquitetura em camadas (Layered Architecture)
 
 Um exemplo de  arquitetura em camadas que segue um padrão de design que organiza um sistema em camadas distintas, cada uma com suas responsabilidades específicas.
+
+
+Neste projeto utilizei algumas tecnologias como:
+
+* **Docker**
+  * Onde especifico as imagens necessarias para rodar minha aplicação como o **Maven**, **JDK 17** e copio o jar da minha aplicação para dentro do container.
+* **Compose**
+  * Onde com um unico comando crio todos containers necessarios como banco **PostgreSQL**, executo um script de criação do banco chamado **init.sql** e executo o Docker onde esta a configuração da aplicação.
+* **Swagger**
+  * Onde visualiso todas requisições da api e posso executa-las.
+* **Flyway**
+  * Uma ferramenta de migração de banco de dados para criação das tabelas utilizadas.
+* **JUnit**
+  * Ferramenta para testes unitarios para cada requisição
 
 ## Quando devo usar?
 
@@ -90,7 +104,7 @@ src
 
 * Clonar o Projeto
     ```
-    git clone 
+    git clone https://github.com/DiegoBorraz/arquitetura-camadas.git
     ```
 * Acessar o diretório do Projeto
   ```
