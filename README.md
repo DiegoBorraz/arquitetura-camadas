@@ -45,31 +45,46 @@ Arquitetura em camadas
 
 src
 .
-├── main
-│   ├── java
-│   ├── com.br.javaCrud
-│   │   ├── controller 
-│   │   ├── core 
-│   │   └── infrastructure
-│   ├── resources
-│   │   ├── db
-│   │   └──── migration
-│   └── application.properties
-└── test
+└── main
+   ├── java
+   ├── com.br.javaCrud
+   │   ├── config
+   │   ├── controller 
+   │   ├── domain
+   │   ├── dto
+   │   ├── enums
+   │   ├── record
+   │   ├── repository
+   │   └── service 
+   └── resources
+       ├── db
+       ├── migration
+       └── application.properties
+
 ```
 
+* **config**
+  * Contém classes de configuração com as exceções padrões, classe de configuração da Specification e configuração do ModelMapper.
 * **controller**
-  * Contém as classes responsáveis por lidar com as requisições HTTP.
-* **core**
-  * Contém a lógica de negócio da aplicação, contém entidades, repositórios, services e especifications.
-* **infrastructure**
-  * Contém configurações de frameworks ou bibliotecas ou serviços externos.
-* **migration**
-  * Contém scripts para realizar migrações de banco de dados, ou seja, atualizar o esquema do banco de dados ao longo do tempo.
+  * Contém classes responsáveis por lidar com as requisições HTTP.
+* **domain**
+  * Contém classes que representam as tabelas do banco.
+* **dto**
+  * Contém classes responsáveis por transportar informações de servidor/cliente protejendo a domain.
+* **enums**
+  * Contém todos enums utilizados no sistema.
+* **record**
+  * Contém classes do tipo Record que simplificam o tranposrte de dados, utilizada para tipar as propriedades de entrada da requisição HTTP.
+* **repository**
+  * Contém Classes que encapsulam a logica JPA para consulta no banco.
+* **service**
+  * Contém Classes que encapsulam a lógica da regra de negócioe utiliza o repository.
+* **util**
+  * Contém Classes que auxiliam uma determinada tarefa.
+
 * **application.properties**
   * Arquivo de configuração da aplicação, onde são definidas as propriedades do sistema.
-* **test**
-  * Contém os testes unitários e de integração da aplicação.
+
   
 ### 📦 Instalação
 
